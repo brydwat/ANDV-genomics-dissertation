@@ -11,7 +11,7 @@ set -e # Exit immediately if any command fails
 # Change these before running.
 
 # Primary project working directory and fasta input
-PROJECT_DIR="~/dissertation"
+PROJECT_DIR="$HOME/dissertation"
 DATA="$PROJECT_DIR/data/compare_andesense.fasta"
 OUTDIR="$PROJECT_DIR/outputs/Segment_S_run_1"
 
@@ -81,7 +81,7 @@ treetime --aln "$ALIGNED_FASTA" \
 echo "EXPORTING RESULTS TO WINDOWS"
 
 mkdir -p "$WIN_DEST"
-cp -r "$OUTDIR" "WIN_DEST/"
+cp -r "$OUTDIR" "$WIN_DEST/"
 
 echo "PIPELINE COMPLETE"
 echo "All outputs successfully written to $OUTDIR and exported to $WIN_DEST"
