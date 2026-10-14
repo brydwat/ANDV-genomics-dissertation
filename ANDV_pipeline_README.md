@@ -1,6 +1,8 @@
 # Andes Virus Genomics Alignment-Phylo-Ancestry Pipeline
 
-An automated Bash workflow for sequential sequence alignment, phylogenetic tree reconstruction, and ancestral sequence inference. These three scripts together were developed for my dissertation with David Robertson and Kieran Lamb at the University of Glasgow and formed the core scripts I used for evaluating data over dozens of runs of different MSA groups. I have unified them here so that I have no more headaches with mixed and matched variables/file/folder names in the future. Previously running through this script involved manually changing the variables for each individual script on each run. A single typo or forgetting to change the reference led to errors, messy data outputs, cluttered directories, etc. Now as I develop my dissertation into a manuscript, I want to avoid those headaches in the future. Its not fully automated and optioned which I would implement in python with argparse and may do later simply as an excercise. But simply grouping the modifiable variables at the top and stringing the scripts together one after the other makes it much more streamlined. I also may add the IQ-TREE 3 ancestral sequence reconstruction script as an option and I may add the sequence translation and ANDV segment protein slicing script I developed in python. Altogether that is probably 95% of the code I ran for my dissertation by number of script calls.
+An automated Bash workflow for sequential sequence alignment, phylogenetic tree reconstruction, and ancestral sequence inference. These three scripts together were developed for my dissertation, which I did with advising from David Robertson and Kieran Lamb at the University of Glasgow. The output from this short pipeline (plus slicing/translation) formed the core scripts I used for evaluating data over dozens of runs of different MSA groups while investigating patterns in ANDV genomics. I have unified them here so that I have no more headaches with mixed and matched variables/file/folder names in the future. 
+
+Previously running through this script involved manually changing the variables for each individual script on each run. A single typo or forgetting to change the reference led to errors, messy data outputs, cluttered directories, etc. Now as I develop my dissertation into a manuscript, I want to avoid those headaches in the future. Its not fully automated and optioned with the full pipeline of analysis I conducted. I may do this later simply as an excercise in python with argparse. But, simply grouping the modifiable variables at the top as global variables and connecting the scripts into a streamlined workflow makes it much easier to manage outputs. Altogether that is probably 95% of the code I ran for my dissertation by number of script calls so consolidating these scritps could have been a significant time saver.
 
 ## Overview
 
@@ -20,8 +22,11 @@ Running the pipeline automatically a directory output folder with the structure 
 
 Segment_Run_Directory/
  > aligned/
+
  > trees/
+
  > ancestries/
+
  > misc/
 
 ## Prerequisites
