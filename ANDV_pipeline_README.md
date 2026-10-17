@@ -13,6 +13,9 @@ This pipeline unifies three core analysis steps into a single executable workflo
 
 All outputs are automatically structured into subdirectories for reproducibility and downstream export.
 
+Added two options -s align which stops after alignment, and s -phylo which stops after phylogeny. No argument runs full script.
+Example: ANDV_pipeline.sh [-a |-p |__].
+
 ---
 
 ## Directory Structure
@@ -21,13 +24,10 @@ Running the pipeline automatically a directory output folder with the structure 
 
 
 Segment_Run_Directory/
- > aligned/
-
- > trees/
-
- > ancestries/
-
- > misc/
+-> aligned/
+-> trees/
+-> ancestries/
+-> misc/
 
 ## Prerequisites
 
