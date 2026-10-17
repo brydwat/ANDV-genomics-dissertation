@@ -7,7 +7,7 @@ Previously running through this script involved manually changing the variables 
 ## Overview
 
 This pipeline unifies three core analysis steps into a single executable workflow:
-**1) Sequence Alignment:** MAFFT (`--add` mode with seed reference sequence)
+**1) Sequence Alignment:** MAFFT (L-INS-i model is set by default)
 **2) Phylogenetic Reconstruction:** IQ-TREE 3 (ModelFinder + Ultrafast Bootstrap)
 **3) Ancestral Sequence Inference:** TreeTime (time-scaled ancestral node reconstruction)
 
